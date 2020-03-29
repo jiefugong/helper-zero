@@ -1,7 +1,7 @@
 import React from "react";
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { Divider, Button, FormControl, Input, FormHelperText } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -15,7 +15,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   }
 };
 
-export default function ReceiverSignUpPage() {
+export default function OrganizationLoginPage() {
 
   return (
     <>
@@ -25,30 +25,30 @@ export default function ReceiverSignUpPage() {
           <Grid item xs>
             <Box m={6}>
               <Box pb={5}>
-                <Typography color="textPrimary" variant="h1">
+                <Typography variant="h1">
                   How does this work?
                 </Typography>
-                <Typography color="textSecondary" variant="subtitle1">
+                <Typography variant="body1">
                   If you are a hospital or a homeless shelter, help your community help you by crowd sourcing resources like medical supplies, food, and donations.
                 </Typography>
               </Box>
               <Box pb={5}>
-                <Typography color="textPrimary" variant="h2">
+                <Typography variant="h2">
                   <PeopleOutlined fontSize="large" style={styles.icon}/>
                   {' '}
                   Create a request profile  
                 </Typography>
-                <Typography color="textSecondary" variant="subtitle1">
+                <Typography variant="body1">
                   Create a profile requesting an amount of supplies from your community. We’ll first verify your organization, then publish your requests live. 
                 </Typography>
               </Box>
               <Box pb={8}>
-                <Typography color="textPrimary" variant="h2">
+                <Typography variant="h2">
                   <DriveEtaOutlined fontSize="large" style={styles.icon}/>
                   {' '}
                   Receive drop-offs or pick-up donations
                 </Typography>
-                <Typography color="textSecondary" variant="body1" style={styles.subTitle}>
+                <Typography variant="body1" style={styles.subTitle}>
                   You can then either choose whether you would like to pick-up donations near you or receive scheduled drop-offs.
                 </Typography>
               </Box>
@@ -57,11 +57,11 @@ export default function ReceiverSignUpPage() {
               </Button>
             </Box>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs lg={5}>
             <Box m={6}>
               <Paper variant="outlined">
                 <Box p={3}>
-                  <Typography color="textPrimary" variant="h2">
+                  <Typography variant="h2">
                     Returning User
                   </Typography>
                   <TextField
